@@ -32,4 +32,4 @@ COPY . ./
 RUN npm run build
 
 RUN npm install -g json
-ENTRYPOINT ./docker-deploy.sh
+ENTRYPOINT ["./docker-deploy.sh"]
